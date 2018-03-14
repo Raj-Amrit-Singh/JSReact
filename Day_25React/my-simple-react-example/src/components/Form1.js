@@ -7,6 +7,7 @@ export class Form1 extends React.Component {
     answer : null,
   }
 }
+
   addNumber(event) {
     event.preventDefault();
     let num1 = Number(document.getElementById('num1').value);
@@ -21,6 +22,7 @@ export class Form1 extends React.Component {
       answer: num1 + num2,
     });
   }
+  
   render() {
     return (
       <form>

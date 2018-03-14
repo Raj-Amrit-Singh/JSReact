@@ -7,6 +7,7 @@ export class Form2 extends React.Component {
       answer: null,
     }
   }
+  
     subtractNumber(event){
     event.preventDefault();
     let num1 = Number(document.getElementById('num11').value);
@@ -21,6 +22,7 @@ export class Form2 extends React.Component {
       answer: Number(document.getElementById('num11').value) - Number(document.getElementById('num21').value),
     });
   }
+
   render() {
     return (
       <form>
