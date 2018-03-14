@@ -6,8 +6,9 @@ export class Form2 extends React.Component {
     this.state = {
       answer: null,
     }
+    this.subtractNumber = this.subtractNumber.bind(this);
   }
-  
+
     subtractNumber(event){
     event.preventDefault();
     let num1 = Number(document.getElementById('num11').value);

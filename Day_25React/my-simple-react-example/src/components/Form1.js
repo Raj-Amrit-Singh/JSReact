@@ -6,6 +6,7 @@ export class Form1 extends React.Component {
     this.state = {
     answer : null,
   }
+  this.addNumber = this.addNumber.bind(this);
 }
 
   addNumber(event) {
@@ -30,7 +31,7 @@ export class Form1 extends React.Component {
           <label>ADD Function</label><br />
           <input  id="num1" type="text" /><br /><br />
           <input id="num2" type="text" /><br /><br />
-          <button onClick={this.addNumber.bind(this)}>Add</button><br/>
+          <button onClick={this.addNumber}>Add</button><br/>
           <label>{this.state.answer}</label>
         </div>
       </form>
